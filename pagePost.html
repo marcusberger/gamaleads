@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="css/general.css">
   <script src="jquery/jquery.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/validacao.js"></script>
+  <script src="js/generico.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon.ico" type="img/favicon.ico">
@@ -34,7 +36,15 @@
       </p>
 
       <!-- Incluir aqui o PHP, cadastrar nome e e-mail-->
-      <form>
+      <form id="form-side-bar">
+        <div class="alert alert-danger" role="alert"  id="alert-obrigatorio" hidden="true">
+          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+          <span class="sr-only"></span> Preencha todos os campos.
+        </div>
+        <div class="alert alert-danger" role="alert"  id="alert-email-invalido" hidden="true">
+          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+          <span class="sr-only"></span> Endereço de e-mail inválido.
+        </div>
         <div class="form-group">
           <input type="text" id="nome" class="form-control" placeholder="Nome">
         </div>
@@ -96,25 +106,31 @@
       </figure>
 
       <!-- Incluir aqui o PHP, cadastrar nome e e-mail-->
-      <div class="form-row form-footer">
+      <div class="form-row footer">
         <div class="footer-text">
           <h3>Gostou das nossas dicas?</h1>
           <h5>Receba novidades e informações preenchendo os campos abaixo</h1>
         </div>
-        <form>
+        <form id="form-footer">
           <div class="form-row align-items-center">
-            <div class="col-sm-4">
-              <label class="sr-only" for="inlineFormInputName">Name</label>
-              <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInputName" placeholder="Nome">
+            <div class="alert alert-danger alert-footer" role="alert"  id="alert-obrigatorio-footer" hidden="true">
+              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              <span class="sr-only"></span> Preencha todos os campos.
             </div>
-
-            <div class="col-sm-4">
-              <label class="sr-only" for="inlineFormInputName">Name</label>
-              <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInputEmail" placeholder="e-mail">
+            <div class="alert alert-danger alert-footer" role="alert"  id="alert-email-invalido-footer" hidden="true">
+              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              <span class="sr-only"></span> Endereço de e-mail inválido.
             </div>
-
-            <div class="col-auto">
-              <button  id="singlebuttonOrage" type="submit" class="btn btn-primary">Quero meu e-book grátis</button>
+            <div class="col-sm-5 input-footer">
+              <label class="sr-only" for="inlineFormInputName">Name</label>
+              <input type="text" class="form-control mb-2 mb-sm-0" id="nome-footer" placeholder="Nome">
+            </div>
+            <div class="col-sm-5 input-footer">
+              <label class="sr-only" for="inlineFormInputName">Name</label>
+              <input type="text" class="form-control mb-2 mb-sm-0" id="email-footer" placeholder="e-mail">
+            </div>
+            <div class="col-auto button-footer">
+              <button type="submit" class="btn btn-primary">Quero meu e-book grátis</button>
             </div>
           </div>
         </form>

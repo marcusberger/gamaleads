@@ -73,11 +73,27 @@
   width: 100%;
 }
 
-.form-footer {
-  margin-bottom: 100px;
+.footer {
+  margin-bottom: 200px;
 }
 
 .footer-text {
   margin-left: 15px;
   margin-bottom: 15px;
+}
+
+.borda-vermelha {
+  border-color: red;
+}
+
+.button-footer {
+  margin-left: 15px;
+}
+
+.input-footer {
+  margin-bottom: 15px;
+}
+
+.alert-footer {
+  margin-right: 35px;
 }
