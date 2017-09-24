@@ -1,4 +1,4 @@
-<?php
+<?php header ('Location: /index.html');
 //"$conexao" recebe a Conexão com o Banco de Dados
 $conexao = pg_connect("host=ec2-107-20-188-239.compute-1.amazonaws.com" port=5432 dbname=d2d21aou17g1i5 user=ppxwnsjkjlvtfb password=6a953ec26f1503028cfed358550049670650a0546d48531a7dd1f8fac74e4419);
 
@@ -22,5 +22,5 @@ elseif ($qtd_linhas == 0)
 echo "Não foi possível cadastrar o Produto";
 }
 
-header ('Location: /index.html')
+
 ?>
