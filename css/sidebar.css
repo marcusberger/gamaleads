@@ -1,0 +1,44 @@
+#sidebarFixo{
+  position: fixed;
+  width: 25%;
+  overflow:hidden;
+  padding:6px;
+  height: 100%;
+  display: inline;
+  float: left;
+  background-color: #ededed;
+}
+
+.div-logo{
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+
+}
+
+#logo-blog{
+
+  padding-left: 10%;
+  padding-right: 10%;
+
+
+}
+
+#descricao{
+  margin-top: 25px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.facebook-link {
+  margin-top: 20px;
+  display: block;
+  margin: auto;
+}
+
+.button-ebook {
+  display: block;
+  margin: auto;
+}
