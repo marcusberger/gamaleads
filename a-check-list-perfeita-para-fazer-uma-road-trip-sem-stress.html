@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Vida boa</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <script src="jquery/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/validacao.js"></script>
+  <script src="js/generico.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico" type="img/favicon.ico">
+
+  <!--Analytics-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106963166-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+  <div id="sidebarFixo">
+    <div class="div-logo">
+      <img id="logo-blog" src="img/Logo_SuaVidaMaisFacil_Black.png" class="img-responsive">
+      <p class="sidebar-text" id="descricao" >Facilite ainda mais a sua vida!<br>
+        <b>Baixe o nosso e-book grátis com dicas surpreendentes.</b>
+      </p>
+
+      <!-- Incluir aqui o PHP, cadastrar nome e e-mail-->
+      <form id="form-side-bar">
+        <div class="alert alert-danger" role="alert"  id="alert-obrigatorio" hidden="true">
+          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+          <span class="sr-only"></span> Preencha todos os campos.
+        </div>
+        <div class="alert alert-danger" role="alert"  id="alert-email-invalido" hidden="true">
+          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+          <span class="sr-only"></span> Endereço de e-mail inválido.
+        </div>
+        <div class="form-group">
+          <input type="text" id="nome" class="form-control" placeholder="Nome">
+        </div>
+        <div class="form-group">
+          <input type="text" id="email" class="form-control" placeholder="e-mail">
+        </div>
+        <div class="text-center">
+          <button  type="submit" class="btn btn-primary">Quero meu e-book grátis</button>
+        </div>
+      </form>
+    </div>
+
+      <!-- <table>
+        <tr id="logo-facebook">
+          <td><img src="img/icon-facebook.png" class="img-responsive"></td>
+          <td>Curta no facebook</td>
+        </tr>
+      </table> -->
+
+    </div>
+  </div>
+
+  <div id="conteudo">
+    <section class="container" id="post">
+      <figure id="post-container" class="jumbotron post-responsive" >
+        <img id="img" class="img-responsive" src="img/a-check-list-perfeita-para-fazer-uma-road-trip-sem-stress.jpg">
+        <div class="separador"></div>
+        <figcaption class='caption' id="caption">
+          <h3 data-toggle="collapse" data-target="#post1">A check list perfeita para fazer uma road trip sem stress</h4>
+          <br>
+          <p id="post-body" >
+            E aquele dia tão desejado ta chegando?
+            Você tem mesmo certeza que ta tudo certo?
+            Ainda não sabe do que eu estou falando, não é?
+            <br><br>
+            Eu to falando daquela ROAD TRIP que você tem sonhado há muito tempo.
+            E agora, meu amigo, ela vai sair do papel.
+            Aqui vão algumas dicas para você se planejar melhor.
+            <br><br>
+            <h5>#1 Escolha seu destino</h5>
+            Já que é uma Road Trip você precisa escolher um destino que você consiga chegar de carro. O importante aqui é que você saiba como é a estrada, rodovia, matagal. Você terá acesso a internet? Precisará de mapas? Dormirá no carro ou no hotel? Ou seja, todo tipo de informação relevante que você possa encontrar. Assim, você consegue adaptar o seu carro, alugar um outro, encontrar maneiras diferentes de chegar ao destino ou até mesmo mudar a direção da sua viagem.
+            <br><br>
+            <h5>#2 Decida se você quer viajar Sozinho ou Acompanhado</h5>
+            Viajar com amigos e família é sensacional, pois criamos laços mais fortes, vivemos momentos inesquecíveis, dividimos as despesas e claro, nos divertimos muito. Mas você já parou para pensar que viajando sozinho você pode viver tudo isso também? E de repente, se pensar em boas estratégias, pode até gastar o mesmo valor que gastaria se estivesse acompanhado.
+            Abaixo, você pode fazer o download da nossa planilha com estratégias para economizar quando viajar sozinho.
+            <br><br>
+            <h5>#3 Limpe seu carro antes e durante a viagem</h5>
+            Muita gente odeia limpar o carro, e eu me incluo nesse meio também, porém antes de iniciar sua trip é importante que você deixe tudo limpinho. Esse é o melhor jeito para que você consiga manter a ordem dentro do carro, pois o seu cerébro vai te condicionando a esse comportamento no dia a dia e a sujeira não vai acumulando durante o período de viagem. Além disso, a gente nunca sabe quando vai rolar a oportunidade de dar aquela carona. E aí, vai arriscar?
+            <br><br>
+            <h5>#4 Check list do seu veículo</h5>
+            Em até uma semana antes da sua viagem, é importante checar se está tudo ok com os pneus do carro, nível de óleo, nível de água, freios, se você tem cabo auxiliador de partida. Tudo que possa te causar problemas ou te deixar parado no meio do caminho. Aqui vale aquela máxima de que é melhor pecar pelo excesso do que pela falta, principalmente se você não entende de automóveis. Nesse caso, sugiro encontrar um mecânico de confiança.
+            No link abaixo temos uma check list para você fazer o download e te ajudar no planejamento.
+            <br><br>
+            <h5>#5 Saiba como se entreter</h5>
+            E se você se sentir entediado? O que fazer? Você pode botar aquela série em dia, voltar a treinar, começar a ler um bom livro, escutar as músicas de uma nova banda. A intenção é que você saiba aproveitar o seu tempo com qualidade, seja com a ajuda da Tecnologia, utilizando notebooks, tablets, celulares, escutando o bom e velho rádio ou tirando aquele cochilo gostoso, depois do almoço. Tudo tem o seu momento e o seu valor, saiba escolher.
+            <br><br>
+            <h5>#6 Planeje os gastos diários da viagem</h5>
+            Uma Road Trip pode durar uma semana, um mês ou até mesmo 1 ano. O que não falta é notícia de pessoas viajando ao redor do mundo, com aquelas fotos absurdas no instagram, em picos muito loucos. Elas nos inspiram e dão coragem, mas podem causar raiva também.
+            Vamo transformar essa raiva em planejamento?
+            Não esqueça de fazer o download da nossa planilha com os gastos básicos de uma Road Trip.
+            <br><br>
+            <h5>#7 Curta todos os momentos</h5>
+            Pode ser clichê falar isso, visto que a ideia de viajar, por si só, já é algo que iremos curtir. Mas, as vezes, nem tudo é como a gente planeja. Então, curta os momentos e saiba aproveitar aqueles em que você desejar ficar sozinho, estiver acompanhado, não quiser dirigir ou quiser dormir. Não sinta-se precionado a seguir o planejamento das atividades à risca e aprenda a negociar consigo mesmo.
+            <br>
+            <br>
+          </p>
+          <button id="btnREAD" name="botao"><a href="index.html">Voltar</a></button>
+          <div id="divBtnREAD" style="background-color: #ff6000">
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- Incluir aqui o PHP, cadastrar nome e e-mail-->
+      <div class="form-row footer">
+        <div class="footer-text">
+          <h3>Gostou das nossas dicas?</h1>
+          <h5>Receba novidades e informações preenchendo os campos abaixo</h1>
+        </div>
+        <form id="form-footer">
+          <div class="form-row align-items-center">
+            <div class="alert alert-danger alert-footer" role="alert"  id="alert-obrigatorio-footer" hidden="true">
+              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              <span class="sr-only"></span> Preencha todos os campos.
+            </div>
+            <div class="alert alert-danger alert-footer" role="alert"  id="alert-email-invalido-footer" hidden="true">
+              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              <span class="sr-only"></span> Endereço de e-mail inválido.
+            </div>
+            <div class="col-sm-5 input-footer">
+              <label class="sr-only" for="inlineFormInputName">Name</label>
+              <input type="text" class="form-control mb-2 mb-sm-0" id="nome-footer" placeholder="Nome">
+            </div>
+            <div class="col-sm-5 input-footer">
+              <label class="sr-only" for="inlineFormInputName">Name</label>
+              <input type="text" class="form-control mb-2 mb-sm-0" id="email-footer" placeholder="e-mail">
+            </div>
+            <div class="col-auto button-footer">
+              <button type="submit" class="btn btn-primary">Quero meu e-book grátis</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </div>
+</body>
+</html>

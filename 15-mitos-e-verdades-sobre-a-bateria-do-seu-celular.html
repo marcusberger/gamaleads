@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Vida boa</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <script src="jquery/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/validacao.js"></script>
+  <script src="js/generico.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico" type="img/favicon.ico">
+
+  <!--Analytics-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106963166-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+  <div id="sidebarFixo">
+    <div class="div-logo">
+      <img id="logo-blog" src="img/Logo_SuaVidaMaisFacil_Black.png" class="img-responsive">
+      <p class="sidebar-text" id="descricao" >Facilite ainda mais a sua vida!<br>
+        <b>Baixe o nosso e-book grátis com dicas surpreendentes.</b>
+      </p>
+
+      <!-- Incluir aqui o PHP, cadastrar nome e e-mail-->
+      <form id="form-side-bar">
+        <div class="alert alert-danger" role="alert"  id="alert-obrigatorio" hidden="true">
+          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+          <span class="sr-only"></span> Preencha todos os campos.
+        </div>
+        <div class="alert alert-danger" role="alert"  id="alert-email-invalido" hidden="true">
+          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+          <span class="sr-only"></span> Endereço de e-mail inválido.
+        </div>
+        <div class="form-group">
+          <input type="text" id="nome" class="form-control" placeholder="Nome">
+        </div>
+        <div class="form-group">
+          <input type="text" id="email" class="form-control" placeholder="e-mail">
+        </div>
+        <div class="text-center">
+          <button  type="submit" class="btn btn-primary">Quero meu e-book grátis</button>
+        </div>
+      </form>
+    </div>
+
+      <!-- <table>
+        <tr id="logo-facebook">
+          <td><img src="img/icon-facebook.png" class="img-responsive"></td>
+          <td>Curta no facebook</td>
+        </tr>
+      </table> -->
+
+    </div>
+  </div>
+
+  <div id="conteudo">
+    <section class="container" id="post">
+      <figure id="post-container" class="jumbotron post-responsive" >
+        <img id="img" class="img-responsive" src="img/15-mitos-e-verdades-sobre-a-bateria-do-seu-celular.jpeg">
+        <div class="separador"></div>
+        <figcaption class='caption' id="caption">
+          <h3 data-toggle="collapse" data-target="#post1">15 verdades e mitos sobre a bateria do seu celular</h4>
+          <br>
+          <p id="post-body" >
+            Hoje em dia a maioria das pessoas são companheiras inseparáveis de seus celulares, mas você sabe tudo mesmo sobre seu fiel companheiro?
+            Claro que nem todo mundo sabe todas as funções especiais de seus celulares, mas e sobre a bateria,
+            esse item fundamental para o funcionamento do seu celular, o que você sabe? Provavelmente você já deve ter ouvido
+            alguma recomendação como "não deixe o celular carregando a noite inteira!" ou "Não use enquanto estiver na tomada".
+            Atualmente com a evolução dos materiais utilizados na confecção das baterias de celulares, alguns desses conselhos não fazem mais sentido.
+            Se você ficou em dúvida e não sabe dizer o que é mito e o que é verdade, leia a seleção de 15 mitos e verdades sobre a
+            bateria do seu celular que preparamos para você!
+            <br>
+            <br>
+          </p>
+          <button id="btnREAD" name="botao"><a href="index.html">Voltar</a></button>
+          <div id="divBtnREAD" style="background-color: #ff6000">
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- Incluir aqui o PHP, cadastrar nome e e-mail-->
+      <div class="form-row footer">
+        <div class="footer-text">
+          <h3>Gostou das nossas dicas?</h1>
+          <h5>Receba novidades e informações preenchendo os campos abaixo</h1>
+        </div>
+        <form id="form-footer">
+          <div class="form-row align-items-center">
+            <div class="alert alert-danger alert-footer" role="alert"  id="alert-obrigatorio-footer" hidden="true">
+              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              <span class="sr-only"></span> Preencha todos os campos.
+            </div>
+            <div class="alert alert-danger alert-footer" role="alert"  id="alert-email-invalido-footer" hidden="true">
+              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              <span class="sr-only"></span> Endereço de e-mail inválido.
+            </div>
+            <div class="col-sm-5 input-footer">
+              <label class="sr-only" for="inlineFormInputName">Name</label>
+              <input type="text" class="form-control mb-2 mb-sm-0" id="nome-footer" placeholder="Nome">
+            </div>
+            <div class="col-sm-5 input-footer">
+              <label class="sr-only" for="inlineFormInputName">Name</label>
+              <input type="text" class="form-control mb-2 mb-sm-0" id="email-footer" placeholder="e-mail">
+            </div>
+            <div class="col-auto button-footer">
+              <button type="submit" class="btn btn-primary">Quero meu e-book grátis</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </div>
+</body>
+</html>
