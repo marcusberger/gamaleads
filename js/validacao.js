@@ -14,7 +14,7 @@ $(document).ready(function() {
     temEmail = validarCampoVazio("#email", "#alert-obrigatorio");
     if (temEmail && temNome) {
       isValid = true;
-      isValid = validaEmail("#email", "#alert-email-invalido")
+      isValid = validaEmail("#email", "#alert-email-invalido");
     }
     return isValid
   })
@@ -33,7 +33,7 @@ $(document).ready(function() {
     temEmail = validarCampoVazio("#email-footer", "#alert-obrigatorio-footer");
     if (temEmail && temNome) {
       isValid = true;
-      isValid = validaEmail("#email-footer", "#alert-email-invalido-footer")
+      isValid = validaEmail("#email-footer", "#alert-email-invalido-footer");
     }
     return isValid
   })
